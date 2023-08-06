@@ -21,6 +21,8 @@ Using 2 NOT gates in series in a loop, you can create a latch to store 1 bit of 
 ## Step 2: Building blocks
 Look at the building_blocks/ folder to see how hardware components like MUXs, adders, shifters, multipliers, etc are implemented from just logic gates (that's crazy!).
 
+If you want to run the test bench files, download and install [Vivado ML](https://www.xilinx.com/products/design-tools/vivado/vivado-ml.html). It's not that easy to use so you might need to find tutorials online.
+
 ---
 ## Step 3: 
 
