@@ -7,7 +7,7 @@ This project is not designed as a place to learn Computer Architecture and Digit
 
 Since I don't have the money or the knowledge yet to turn my code into chips and get them manufactured at a fab like TSMC, the only way I can think of to turn my code into hardware is using FPGA. Research more about it or read the book talked about below if you are interested.
 
-I got my knowledge for this project from the book [Digital Design and Computer Architecture ARM Edition by Sarah Harris and David Harris] and ECE 274A CSC 252 at University of Arizona. If you already know digital design and computer architecture then there is no need to read anything or take a course. If you don't know digital design or computer architecture then you should probably read the book or even take a course in these subjects first.
+I got my knowledge for this project from the book [Digital Design and Computer Architecture ARM Edition by Sarah Harris and David Harris](https://a.co/d/3RVmVEn) and ECE 274A CSC 252 at University of Arizona. If you already know digital design and computer architecture then there is no need to read anything or take a course. If you don't know digital design or computer architecture then you should probably read the book or even take a course in these subjects first.
 
 ---
 ## Step 1: What's underneath logic gates
