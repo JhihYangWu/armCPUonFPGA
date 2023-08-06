@@ -11,11 +11,11 @@ I got my knowledge for this project from the book [Digital Design and Computer A
 
 ---
 ## Step 1: What's underneath logic gates
-To truly understand how a CPU works, you have to go even lower than the logic gates. I will provide a brief overview of how to create logic gates for compuation and registers for memory from only 2 types of transistors (that's crazy!).
+To truly understand how a CPU works, you have to go even lower than the logic gates. I will provide a brief overview of how to create logic gates for computation and registers for memory from only 2 types of transistors (that's crazy!).
 
 First you need nMOS and pMOS transistors. You will need to study physics in order to understand how to manufacture them. Once you have these two types of transistors, you can create NOT gates, NAND gates, and NOR gates. Schematics for these can be found online with a quick google search or on page 31 - 32 of the book. Then using combinations of these gates you can create AND, OR, XOR, XNOR, etc. You can figure these out yourself or with a quick google search.
 
-Using 2 NOT gates in series in a loop, you can create a latch to store 1 bit of information. Theres no good way to turn on and off this latch so we have the SR (set reset) latch. Schematic on page 111. Instead of set and reset inputs, its better to have something that updates its value based on a data wire and a clock signal so people invented the D latch by adding a bit of combinational logic in front of SR latch. Instead of continuously updating the memory in the D latch when the clock is high, its better to have something that updates at the edge of a clock, so people invented D Flip-Flop by combining two D latches and some logic gates. Combine 32 D Flip-Flops with the same clock signal and you have a 32-bit register for storing anything you want.
+Using 2 NOT gates in series in a loop, you can create a latch to store 1 bit of information. There's no good way to turn on and off this latch so we have the SR (set reset) latch. Schematic on page 111. Instead of set and reset inputs, its better to have something that updates its value based on a data wire and a clock signal so people invented the D latch by adding a bit of combinational logic in front of SR latch. Instead of continuously updating the memory in the D latch when the clock is high, it's better to have something that updates at the edge of a clock, so people invented D Flip-Flop by combining two D latches and some logic gates. Combine 32 D Flip-Flops with the same clock signal and you have a 32-bit register for storing anything you want.
 
 ---
 ## Step 2: Building blocks
@@ -26,4 +26,4 @@ Look at the building_blocks/ folder to see how hardware components like MUXs, ad
 
 ---
 ## Step N: Going beyond
-Once you have a CPU that understands assembly language, you can go even higher level by creating a C compiler or even write an operating system. Unfortunately, I haven't taken a compilers or OS class yet so that would be for another day.
+Once you have a CPU that understands assembly language, you can go even higher level by creating a C compiler or even writing an operating system. Unfortunately, I haven't taken a compilers or OS class yet so that would be for another day.
