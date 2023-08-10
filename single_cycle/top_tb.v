@@ -16,9 +16,9 @@ module top_tb();
     end
 
     initial begin
-        Rst <= 1; #100;
+        Rst <= 1; #350;
         Rst <= 0;
     end
 
-endmodule;
+endmodule
 
