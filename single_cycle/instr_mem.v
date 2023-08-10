@@ -7,7 +7,7 @@ module instr_mem(PC, Instr);
 
     reg [31:0] RAM[63:0];
 
-    initial begin
+    initial begin  // Copy of instructions found on page 453.
         RAM[ 0] <= 32'b11100000010011110000000000001111;
         RAM[ 1] <= 32'b11100010100000000010000000000101;
         RAM[ 2] <= 32'b11100010100000000011000000001100;
