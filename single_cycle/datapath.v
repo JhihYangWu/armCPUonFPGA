@@ -24,7 +24,7 @@ module datapath(Clk, Rst, RegSrc, RegWrite, ImmSrc, ALUSrc, ALUControl, MemtoReg
 
     // Next PC logic.
     mux2x1 #(32) pcmux(PCPlus4, Result, PCSrc, PCNext);
-    register #(32) pcreg(Clk, Rst, PCNext, 1b'1, PC);
+    register #(32) pcreg(Clk, Rst, PCNext, 1'b1, PC);
     carry_lookahead_adder #(32) pcadd1(PC, 32'b100, 1'b0, PCPlus4, dummy1);
     carry_lookahead_adder #(32) pcadd2(PCPlus4, 32'b100, 1'b0, PCPlus8, dummy2);
 
