@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../building_blocks/alu.v" \
+"../../../../../../arm_cpu.v" \
+"../../../../../../../building_blocks/arm_reg_file.v" \
+"../../../../../../../building_blocks/basic_alu.v" \
+"../../../../../../../building_blocks/carry_lookahead_adder.v" \
+"../../../../../../../building_blocks/carry_lookahead_adder_block.v" \
+"../../../../../../condcheck.v" \
+"../../../../../../condlogic.v" \
+"../../../../../../controller.v" \
+"../../../../../../data_mem.v" \
+"../../../../../../datapath.v" \
+"../../../../../../decoder.v" \
+"../../../../../../../building_blocks/decoder_4_16.v" \
+"../../../../../../../building_blocks/full_adder.v" \
+"../../../../../../instr_mem.v" \
+"../../../../../../../building_blocks/mux16x1.v" \
+"../../../../../../../building_blocks/mux2x1.v" \
+"../../../../../../../building_blocks/mux4x1.v" \
+"../../../../../../../building_blocks/register.v" \
+"../../../../../../../building_blocks/ripple_carry_adder.v" \
+"../../../../../../../building_blocks/sign_extender.v" \
+"../../../../../../top.v" \
+"../../../../../../top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

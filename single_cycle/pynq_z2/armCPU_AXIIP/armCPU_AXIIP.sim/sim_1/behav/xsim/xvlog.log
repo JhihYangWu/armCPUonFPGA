@@ -1,0 +1,48 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/arm_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arm_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/arm_reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arm_reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/basic_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basic_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/carry_lookahead_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module carry_lookahead_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/carry_lookahead_adder_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module carry_lookahead_adder_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/condcheck.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module condcheck
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/condlogic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module condlogic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/decoder_4_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_4_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/mux16x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux16x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/mux2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/mux4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/ripple_carry_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_carry_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/sign_extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/single_cycle/pynq_z2/armCPU_AXIIP/armCPU_AXIIP.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

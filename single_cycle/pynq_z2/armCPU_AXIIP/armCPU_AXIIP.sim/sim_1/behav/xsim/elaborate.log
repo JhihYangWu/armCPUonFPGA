@@ -1,0 +1,40 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'C' [C:/Users/jhihyang_wu/Documents/Projects/Computer From Scratch/armCPUonFPGA/building_blocks/register.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.mux4x1(N=2)
+Compiling module xil_defaultlib.register(N=2)
+Compiling module xil_defaultlib.condcheck
+Compiling module xil_defaultlib.condlogic
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.mux2x1
+Compiling module xil_defaultlib.mux4x1
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_carry_adder(N=4)
+Compiling module xil_defaultlib.carry_lookahead_adder_block
+Compiling module xil_defaultlib.carry_lookahead_adder_default
+Compiling module xil_defaultlib.mux2x1(N=4)
+Compiling module xil_defaultlib.decoder_4_16
+Compiling module xil_defaultlib.mux16x1
+Compiling module xil_defaultlib.arm_reg_file
+Compiling module xil_defaultlib.sign_extender
+Compiling module xil_defaultlib.basic_alu
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.arm_cpu
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
