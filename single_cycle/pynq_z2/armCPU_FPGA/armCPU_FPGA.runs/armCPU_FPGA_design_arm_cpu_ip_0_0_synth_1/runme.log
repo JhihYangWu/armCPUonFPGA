@@ -1,0 +1,394 @@
+
+*** Running vivado
+    with args -log armCPU_FPGA_design_arm_cpu_ip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source armCPU_FPGA_design_arm_cpu_ip_0_0.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source armCPU_FPGA_design_arm_cpu_ip_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 448.535 ; gain = 165.270
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'x:/single_cycle/pynq_z2/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: armCPU_FPGA_design_arm_cpu_ip_0_0
+Command: synth_design -top armCPU_FPGA_design_arm_cpu_ip_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16704
+WARNING: [Synth 8-6901] identifier 'pc' is used before its declaration [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0_S00_AXI.v:237]
+WARNING: [Synth 8-6901] identifier 'memwrite' is used before its declaration [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0_S00_AXI.v:238]
+WARNING: [Synth 8-6901] identifier 'aluresult' is used before its declaration [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0_S00_AXI.v:239]
+WARNING: [Synth 8-6901] identifier 'writedata' is used before its declaration [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0_S00_AXI.v:240]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1301.328 ; gain = 408.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'armCPU_FPGA_design_arm_cpu_ip_0_0' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ip/armCPU_FPGA_design_arm_cpu_ip_0_0/synth/armCPU_FPGA_design_arm_cpu_ip_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'arm_cpu_ip_v1_0' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'arm_cpu_ip_v1_0_S00_AXI' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0_S00_AXI.v:384]
+INFO: [Synth 8-6157] synthesizing module 'arm_cpu_all_32' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/arm_cpu_all_32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'arm_cpu' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/arm_cpu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'controller' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/decoder.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/decoder.v:6]
+INFO: [Synth 8-6157] synthesizing module 'condlogic' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/condlogic.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4x1' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux4x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x1' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux4x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'condcheck' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/condcheck.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'condcheck' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/condcheck.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'condlogic' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/condlogic.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/datapath.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2x1' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux2x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x1' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux2x1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized0' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4x1__parameterized0' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux4x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x1__parameterized0' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux4x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized0' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'carry_lookahead_adder' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/carry_lookahead_adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'carry_lookahead_adder_block' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/carry_lookahead_adder_block.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ripple_carry_adder' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/ripple_carry_adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/full_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/full_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ripple_carry_adder' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/ripple_carry_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'carry_lookahead_adder_block' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/carry_lookahead_adder_block.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'carry_lookahead_adder' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/carry_lookahead_adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2x1__parameterized0' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux2x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x1__parameterized0' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux2x1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'arm_reg_file' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/arm_reg_file.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder_4_16' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/decoder_4_16.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_4_16' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/decoder_4_16.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mux16x1' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux16x1.v:3]
+INFO: [Synth 8-226] default block is never used [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux16x1.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'mux16x1' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/mux16x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'arm_reg_file' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/arm_reg_file.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sign_extender' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/sign_extender.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extender' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/sign_extender.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/alu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'basic_alu' [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/basic_alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'basic_alu' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/basic_alu.v:3]
+WARNING: [Synth 8-567] referenced signal 'cout' should be on the sensitivity list [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/alu.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/building_blocks/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/datapath.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'arm_cpu' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/arm_cpu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'arm_cpu_all_32' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/arm_cpu_all_32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'arm_cpu_ip_v1_0_S00_AXI' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'arm_cpu_ip_v1_0' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ipshared/b8e9/hdl/arm_cpu_ip_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'armCPU_FPGA_design_arm_cpu_ip_0_0' (0#1) [x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/ip/armCPU_FPGA_design_arm_cpu_ip_0_0/synth/armCPU_FPGA_design_arm_cpu_ip_0_0.v:53]
+WARNING: [Synth 8-7129] Port Instr[31] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[30] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[29] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[28] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[27] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[26] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[25] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[24] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[19] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[18] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[17] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[16] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[31] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[30] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[29] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[28] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[27] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[26] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[25] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[24] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[23] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[22] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[21] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[20] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[19] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[18] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[17] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[16] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[15] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[14] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[13] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[12] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[11] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[10] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[9] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[8] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[7] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[6] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[5] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[4] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[3] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[2] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemWrite[1] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[31] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[30] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[29] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[28] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[27] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[26] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[25] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[24] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[23] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[22] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[21] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[20] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[19] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[18] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[17] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[16] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[15] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[14] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[13] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[12] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[11] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[10] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[9] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[8] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[7] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[6] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[5] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[4] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[3] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[2] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Clk[1] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[31] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[30] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[29] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[28] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[27] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[26] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[25] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[24] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[23] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[22] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[21] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[20] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[19] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[18] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[17] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[16] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[15] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[14] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[13] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[12] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[11] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[10] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[9] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[8] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[7] in module arm_cpu_all_32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst[6] in module arm_cpu_all_32 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1401.156 ; gain = 508.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1401.156 ; gain = 508.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1401.156 ; gain = 508.582
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1401.156 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1510.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1510.629 ; gain = 0.059
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 97    
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 25    
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   5 Input   32 Bit        Muxes := 4     
+	   5 Input   10 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |    33|
+|3     |LUT3  |   198|
+|4     |LUT4  |    46|
+|5     |LUT5  |   503|
+|6     |LUT6  |   481|
+|7     |MUXF7 |   145|
+|8     |MUXF8 |    46|
+|9     |FDRE  |   787|
+|10    |FDSE  |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.629 ; gain = 618.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1510.629 ; gain = 508.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1510.629 ; gain = 618.055
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1510.629 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 191 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1510.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4d73336a
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1510.629 ; gain = 1027.117
+INFO: [Common 17-1381] The checkpoint 'X:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.runs/armCPU_FPGA_design_arm_cpu_ip_0_0_synth_1/armCPU_FPGA_design_arm_cpu_ip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP armCPU_FPGA_design_arm_cpu_ip_0_0, cache-ID = 272e4e9818dcfc62
+INFO: [Coretcl 2-1174] Renamed 31 cell refs.
+INFO: [Common 17-1381] The checkpoint 'X:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.runs/armCPU_FPGA_design_arm_cpu_ip_0_0_synth_1/armCPU_FPGA_design_arm_cpu_ip_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file armCPU_FPGA_design_arm_cpu_ip_0_0_utilization_synth.rpt -pb armCPU_FPGA_design_arm_cpu_ip_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 10 16:53:48 2023...

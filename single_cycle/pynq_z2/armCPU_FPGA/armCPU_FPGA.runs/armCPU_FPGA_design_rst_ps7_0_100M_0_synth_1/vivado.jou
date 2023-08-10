@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Aug 10 16:52:35 2023
+# Process ID: 16664
+# Current directory: X:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.runs/armCPU_FPGA_design_rst_ps7_0_100M_0_synth_1
+# Command line: vivado.exe -log armCPU_FPGA_design_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source armCPU_FPGA_design_rst_ps7_0_100M_0.tcl
+# Log file: X:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.runs/armCPU_FPGA_design_rst_ps7_0_100M_0_synth_1/armCPU_FPGA_design_rst_ps7_0_100M_0.vds
+# Journal file: X:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.runs/armCPU_FPGA_design_rst_ps7_0_100M_0_synth_1\vivado.jou
+# Running On: DESKTOP-KVK3540, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 8266 MB
+#-----------------------------------------------------------
+source armCPU_FPGA_design_rst_ps7_0_100M_0.tcl -notrace

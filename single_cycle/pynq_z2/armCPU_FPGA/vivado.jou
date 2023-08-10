@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Aug 10 16:48:09 2023
+# Process ID: 10676
+# Current directory: X:/single_cycle/pynq_z2/armCPU_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13180 X:\single_cycle\pynq_z2\armCPU_FPGA\armCPU_FPGA.xpr
+# Log file: X:/single_cycle/pynq_z2/armCPU_FPGA/vivado.log
+# Journal file: X:/single_cycle/pynq_z2/armCPU_FPGA\vivado.jou
+# Running On: DESKTOP-KVK3540, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 8266 MB
+#-----------------------------------------------------------
+start_gui
+open_project X:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+open_bd_design {X:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.srcs/sources_1/bd/armCPU_FPGA_design/armCPU_FPGA_design.bd}
+make_wrapper -files [get_files X:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.srcs/sources_1/bd/armCPU_FPGA_design/armCPU_FPGA_design.bd] -top
+add_files -norecurse x:/single_cycle/pynq_z2/armCPU_FPGA/armCPU_FPGA.gen/sources_1/bd/armCPU_FPGA_design/hdl/armCPU_FPGA_design_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
