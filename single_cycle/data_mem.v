@@ -13,7 +13,7 @@ module data_mem(Clk, W_En, Addr, W_Data, R_Data);
     
     always @(posedge Clk) begin
         if (W_En) begin
-            RAM[Addr[31:2]] <= W_data;
+            RAM[Addr[31:2]] <= W_Data;
         end
     end
 

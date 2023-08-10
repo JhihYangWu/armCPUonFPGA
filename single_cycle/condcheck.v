@@ -6,7 +6,7 @@ module condcheck(Cond, Flags, CondEx);
     output reg CondEx;
 
     wire neg, zero, carry, overflow;
-    reg ge;
+    wire ge;
 
     assign {neg, zero, carry, overflow} = Flags;
     assign ge = (neg == overflow);
