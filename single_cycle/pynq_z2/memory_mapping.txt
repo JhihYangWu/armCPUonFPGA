@@ -1,0 +1,10 @@
+Direction    Signal       Address_Offset
+input        Clk          0x00
+input        Rst          0x04
+output       PC           0x08
+input        Instr        0x0C
+output       MemWrite     0x10
+output       ALUResult    0x14
+output       WriteData    0x18
+input        ReadData     0x1C
+
