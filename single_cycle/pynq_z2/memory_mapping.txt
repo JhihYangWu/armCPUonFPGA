@@ -1,3 +1,5 @@
+MAKE SURE TO USE arm_cpu_all_32.v INSTEAD OF arm_cpu.v.
+
 Direction    Signal       Address_Offset
 input        Clk          0x00
 input        Rst          0x04
